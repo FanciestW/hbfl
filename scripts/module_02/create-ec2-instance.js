@@ -2,7 +2,7 @@
 const AWS = require('aws-sdk');
 const helpers = require('./helpers');
 
-let credentials = new AWS.SharedIniFileCredentials({ profile: 'edu' });
+const credentials = new AWS.SharedIniFileCredentials({ profile: 'edu' });
 AWS.config.update({ credentials, region: 'us-east-1' });
 
 // Declare local variables
